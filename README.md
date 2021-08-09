@@ -1,4 +1,4 @@
-# conversor_de_moedas
+# conversor de moedas
 Programa feito com Python3 e o microframework web Flask
 
 Uma aplicação web que consome a api: https://economia.awesomeapi.com.br para fazer conversão de valores entre moedas
