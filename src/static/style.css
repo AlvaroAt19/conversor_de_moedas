@@ -1,0 +1,12 @@
+html { font-family: sans-serif; background-image:url("dindin.jpg");height: 100%;background-image: url("dindin.jpg");}
+html {background-size: cover;background-position: center;background-attachment: fixed;margin: 0;}
+body {height: 100%;}
+h1 { font-family: serif; color: #161d22; margin: 1rem 0; font-size: 80px;padding: 0 0.5rem; text-align: center;}
+title { color: black; font-size: large; margin: auto;font-family: Georgia; padding: 0 0.5rem;}
+form { margin: 0; display: flex; flex-direction: column; padding: 0 0.5rem}
+label { background: rgb(235, 224, 224); display: flex; align-items: center; padding: 0 0.5rem;}
+label { flex: auto; margin: 1; }
+input[type=submit]:hover {color: blue;}
+input[type=number] {padding: 0 0.5rem}
+div {background-color: crimson;color: black; font-size: 30px; margin: auto;font-family: Georgia; padding: 0 0.5rem}
+p {background-color: rgb(176, 223, 223);color: rgb(0, 0, 0); font-size: large; margin: auto;font-family: Georgia; padding: 0 0.5rem; font-size: 30px;}

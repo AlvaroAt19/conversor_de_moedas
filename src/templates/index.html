@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+    <h1>Conversor de moedas</h1>
+
+    <form method="POST">
+        
+        <label for="from">Escolha a moeda para ser convertida:</label>
+        <select name="from" id="from">
+            {% for opcao in lista %}
+                <option value={{ opcao }}>{{ opcao }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+
+        <label for ="Value from">Valor a ser convertido:</label>
+        <input type="number" step="0.01" id="Value from" name="Value from" required>
+        
+        <label for="to">Escolha a moeda para converter:</label>
+        <select name="to" id="to">
+            {% for opcao in lista %}
+                <option value={{ opcao }}>{{ opcao }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        
+        {% for message in get_flashed_messages() %}
+         <div class="flash">{{ message }}</div>
+        {% endfor %}
+        
+        <input type="submit" value="Converter">
+    </form>
+    {% if val_fin %}
+        <p>O valor convertido é: {{ val_fin }} </p>
+    {% endif %}
+</body>
+</html>
